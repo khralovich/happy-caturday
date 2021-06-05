@@ -2,5 +2,5 @@
 
 Chrome extension that shows a new cat picture everyday =^._.^= ∫   
 
-Made with help of [TheCatApi](https://docs.thecatapi.com/#thecatapi--developer-experience). 
+Made with help of [TheCatApi](https://docs.thecatapi.com/#thecatapi--developer-experience) and my own cat Arch. 
 
