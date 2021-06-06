@@ -1,5 +1,27 @@
 body {
-    background-color: #edae49;
-    font-size: 40px;
-    overflow: hidden; 
+    background-color: #0b223f;
+    overflow: hidden;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+   padding: 200px 300px;
+}
+
+.quote {
+font-size: 30px;
+
+
+}
+
+.author {
+font-size: 15px;
+font-style: italic;
+text-align: right;
+}
+
+.kitty-img {
+    width: 300px;
 }

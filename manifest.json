@@ -3,6 +3,7 @@
     "name": "Happy Caturday",
     "version": "0.0.1.2",
     "description": "New tab, new cat",
+    "author": "Nasta Khralvich",
     "chrome_url_overrides": {
         "newtab": "index.html"
       },
