@@ -1,0 +1,13 @@
+{
+    "manifest_version": 1,
+    "name": "Happy Caturday",
+    "version": "0.0.1.2",
+    "description": "New tab, new cat",
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+      },
+      "icons": { "16": "icons/happycat.png",
+        "48": "icons/happycat-2png",
+        "128": "icons/happycat-3.png"
+      }
+}
