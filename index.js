@@ -17,9 +17,8 @@ async function quoteFetch() {
   .then(resp => resp.json());
   const randomNumber = Math.floor(Math.random() * 15);
   catQuote.innerHTML = Object.values(resp)[randomNumber];
-  author.innerHTML =Object.keys(resp)[randomNumber];
+  author.innerHTML = Object.keys(resp)[randomNumber];
 }
-
 
 
 async function getACat(url) {
@@ -27,8 +26,6 @@ async function getACat(url) {
      let data = await response.json();
      catPhoto.src = data[0].url;
 }
-
-
 
 
 quoteFetch();
