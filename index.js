@@ -7,6 +7,7 @@ const catPhoto = document.querySelector('#kitty-img');
 const catQuote = document.querySelector('#quote');
 const author = document.querySelector('#author');
 
+
 function colorRandomizer() {
 return document.body.style.backgroundColor  = bgColorsArr[Math.floor(Math.random() * 8)];
 }
@@ -14,24 +15,26 @@ return document.body.style.backgroundColor  = bgColorsArr[Math.floor(Math.random
 async function quoteFetch() {
     const resp = await fetch('/quotes.json')
   .then(resp => resp.json());
-  const randomNumber = Math.floor(Math.random() * 12);
-return catQuote.innerHTML = Object.values(resp)[randomNumber];
-
-//console.log(Object.keys(resp)[randomNumber]);
-//console.log(Object.values(resp)[randomNumber]);
+  const randomNumber = Math.floor(Math.random() * 15);
+  catQuote.innerHTML = Object.values(resp)[randomNumber];
+  author.innerHTML =Object.keys(resp)[randomNumber];
 }
+
+
 
 async function getACat(url) {
     const response = await fetch(url);
      let data = await response.json();
-     return catPhoto.src = data[0].url;
+     catPhoto.src = data[0].url;
 }
+
 
 
 
 quoteFetch();
 colorRandomizer();
 getACat(apiUrl);
+
 
 
 
