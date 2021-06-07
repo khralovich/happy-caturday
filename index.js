@@ -11,12 +11,14 @@ function colorRandomizer() {
 return document.body.style.backgroundColor  = bgColorsArr[Math.floor(Math.random() * 8)];
 }
 
-async function quoteRandomizer() {
+async function quoteFetch() {
     const resp = await fetch('/quotes.json')
   .then(resp => resp.json());
   const randomNumber = Math.floor(Math.random() * 12);
-  console.log(Object.keys(resp)[randomNumber]);
-  console.log(Object.values(resp)[randomNumber]);
+return catQuote.innerHTML = Object.values(resp)[randomNumber];
+
+//console.log(Object.keys(resp)[randomNumber]);
+//console.log(Object.values(resp)[randomNumber]);
 }
 
 async function getACat(url) {
@@ -25,7 +27,9 @@ async function getACat(url) {
      return catPhoto.src = data[0].url;
 }
 
-quoteRandomizer();
+
+
+quoteFetch();
 colorRandomizer();
 getACat(apiUrl);
 
