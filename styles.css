@@ -4,7 +4,8 @@ body {
     color: white;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    -webkit-animation: fadein 2s;
+    -webkit-animation: fadein 3s;
+    
 }
 
 @keyframes fadein {
@@ -17,7 +18,12 @@ body {
 }
 
 .container {
-   padding: 200px 300px;
+ padding: 20vh 30vh;
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: column;
+ align-content: center;
+
 }
 
 .quote {
@@ -33,5 +39,8 @@ text-align: right;
 }
 
 .kitty-img {
-    width: 300px;
+    height: 40vh;
+    -webkit-animation: fadein 6;
+    
 }
+
